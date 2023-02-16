@@ -1,0 +1,42 @@
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <section class="vh-100" style="background-color: #508bfc;">
+    <div class="container py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+          <div class="card shadow-2-strong" style="border-radius: 1rem;">
+            <div class="card-body p-5 text-center">
+              <h3 class="mb-5">Enter your details</h3>
+              <div class="form-outline mb-4">
+                <div class="form-group">
+                  <label>Name</label>
+                  <input type="text" class="form-control" #studentName style="text-align: center;">
+                  <label>College Name</label>
+                  <input type="text" class="form-control" #collegeName style="text-align: center;">
+                  <label>Degree</label>
+                  <select class="form-control" #degree>
+                    <option style="text-align: center;">--Select--</option>
+                    <option style="text-align: center;" value="B.Tech">B.Tech</option>
+                    <option style="text-align: center;" value="BBA">BBA</option>
+                    <option style="text-align: center;" value="B.Pharma">B.Phama</option>
+                    <option style="text-align: center;" value="B.Com">B.Com</option>
+                    <option style="text-align: center;" value="M.Tech">M.Tech</option>
+                    <option style="text-align: center;" value="MBA">MBA</option>
+                    <option style="text-align: center;" value="M.Com">M.Com</option>
+                    <option style="text-align: center;" value="M.Pharma">M.Pharma</option>
+                  </select>
+                  <label>Specialization</label>
+                  <input type="text" class="form-control" #specialization style="text-align: center;">
+                </div>
+              </div>
+              <button
+      class="btn btn-primary"
+      (click)="onCreateAccount(studentName.value, collegeName.value, degree.value, specialization.value)" routerLink="/info">
+      Add Account
+    </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
