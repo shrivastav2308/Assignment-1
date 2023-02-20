@@ -11,19 +11,17 @@
           <div class="card-body p-5 text-center">
             <div>
                 <h3>User Dashboard</h3>
-                <hr>
-                <div style="margin-left: 25%;">
+                <div>
                   <app-info
                     *ngFor="let acc of accounts; let i = index"
                     [account]="acc"></app-info>
-                </div><hr>
+                </div>
               </div>
           </div>
         </div>
     </div>
 </div>
 </div>
-<hr>
 <router-outlet></router-outlet>
 
 

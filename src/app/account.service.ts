@@ -3,10 +3,10 @@ import { EventEmitter, Injectable } from "@angular/core";
 export class AccountService {
     accounts = [
         {
-          name: 'Piyush Srivastava',
-          collegeName: 'GLA University',
-          degree: 'B.Tech',
-          specialization: 'AIML'
+          name: '',
+          collegeName: '',
+          degree: '',
+          specialization: ''
         },
     ];
     statusUpdate = new EventEmitter<string>();
